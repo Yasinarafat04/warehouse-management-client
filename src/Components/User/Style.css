@@ -1,0 +1,36 @@
+:root {
+    --dark-blue: #00235A;
+    --red: #C8242F;
+}
+
+.login-page{
+    width: 500px;
+    margin: 0 auto;
+}
+.button-primary{
+    background-color: var(--red);
+    color: white;
+    font-weight: 600;
+    padding: 8px 25px;
+    border: none;
+}
+.button-primary:hover{
+    color: #ffffff;
+}
+.reg-button{
+    
+    color: var(--red);
+    font-weight: 600;
+    padding: 8px 25px;
+}
+.reg-button:hover{
+color: #C8242F;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .login-page{
+        width: 100%;
+        margin: 0 auto;
+    }
+}

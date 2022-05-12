@@ -1,0 +1,131 @@
+.grid-3-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+}
+
+.inventory-card {
+    width: 100%;
+    height: 600px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 8px rgb(194, 194, 194);
+    border-radius: 10px;
+}
+
+.inventory-card .inv-image {
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-bottom: 17px;
+}
+
+.manage-inv {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.manage-inv img {
+    width: 100px;
+}
+
+.group h5 {
+    margin-right: 20px;
+}
+
+.group {
+    align-items: center;
+}
+
+.group img {
+    margin-right: 30px;
+}
+
+
+/* manage-inventory  */
+.manage-inventory {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-top: 100px;
+}
+
+.manage-inventory img {
+    width: 90%;
+    border-radius: 20px;
+}
+
+.add-quantity {
+    display: flex;
+    /* align-items: center; */
+    margin-top: 30px;
+}
+
+.add-quantity input {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid rgb(2, 18, 165);
+    border-radius: 5px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-product-db {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-product-db input {
+    margin-bottom: 20px;
+    padding: 5px 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .grid-3-col {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+
+    .grid-3-col {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1.5rem;
+    }
+    .inventory-card {
+        width: 100%;
+        height: 700px;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0px 0px 8px rgb(194, 194, 194);
+        border-radius: 10px;
+    }
+    
+    .inventory-card .inv-image {
+        width: 100%;
+        height: 55%;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        margin-bottom: 17px;
+    }
+    .manage-inventory {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        margin-top: 100px;
+    }
+    
+    
+}
